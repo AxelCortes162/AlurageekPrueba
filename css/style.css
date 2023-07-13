@@ -445,10 +445,15 @@ input{
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
     }
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 }
 .formulario{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 .formulario option{
