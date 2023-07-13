@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alurageek-Producto</title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/Logo.svg" alt="Logo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a class="nav__enlace nav__enlace--activo" href="index.html">Tienda</a>
+        <a class="nav__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>
+            React js
+        </h1>
+
+        <div class="camisa">
+            <img src="img/3.jpg" alt="imagen del producto" class="camisa__img">
+            <div class="camisa__contenido">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iure dolor nulla rem ad, consectetur ipsa asperiores perspiciatis rerum veritatis labore inventore dolorum aliquid quia laborum in praesentium, necessitatibus voluptas.</p>
+                <form action="" class="formulario">
+                    <select class="formulario__campo" name="" id="">
+                        <option disabled selected value="">Seleccionar Talla</option>
+                        <option value="">Chica</option>
+                        <option value="">Mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contacto">
+            <divc class="contacto__container">
+                <div class="contacto__logo">
+                    <a href="index.html">
+                        <img class="header__logo" src="img/Logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="contacto__links">
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Programa de fidelidad</a>
+                    <a href="#">Nuestras Tiendas</a>
+                    <a href="#">Quiero ser franquiciado</a>
+                    <a href="#">Anúncie aquí</a>
+                </div>
+            </divc>
+            
+            <div class="contacto__contacto">
+                <h3>
+                    Hable con nosotros
+                </h3>
+                <div class="contacto__contacto--inputs">
+                    <input type="text" placeholder="Nombre" class="contacto__input">
+                    <textarea class="contacto__textarea" placeholder="Escribe tu mensaje" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <button class="contacto__boton" type="submit">
+                    Enviar mensaje
+                </button>
+            </div>
+        </div>
+        <div class="rodapie">
+            <p class="rodapie__texto">AluraGeek - Todos los derechos Reservados 2023.</p>
+        </div>
+    </footer>
+</body>
+</html>
