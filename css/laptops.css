@@ -315,6 +315,12 @@ input{
 .producto{
     background-color: var(--primarioOscuro);
     padding: 1rem;
+    transition: .5s;
+}
+@media (min-width: 768px) {
+   .producto:hover{
+    transform: scale(1.3);
+    } 
 }
 .producto__img{
     width: 100%;
