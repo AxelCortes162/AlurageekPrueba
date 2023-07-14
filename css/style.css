@@ -445,15 +445,12 @@ input{
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
     }
-    .formulario{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
 }
 .formulario{
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
     gap: 2rem;
 }
 .formulario option{
@@ -484,4 +481,11 @@ input{
     cursor:pointer;
     background-color: var(--secundarioOscuro);
     
+}
+@media (min-width: 768px) {
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 }
