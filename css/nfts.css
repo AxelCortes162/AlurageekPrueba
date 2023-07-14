@@ -287,6 +287,8 @@ input{
     display: flex;
     justify-content: center;
     gap:2rem;
+    position:sticky;
+    top: 0;
 }
 .nav__enlace{
     font-family: var(--fuentePrincipal);
