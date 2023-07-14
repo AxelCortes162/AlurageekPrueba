@@ -334,9 +334,12 @@ input{
     padding: 1rem;
     transition: .3s;
 }
-.producto:hover{
+@media (min-width: 1200px) {
+    .producto:hover{
     transform: scale(1.5);
+    }
 }
+
 .producto__img{
     width: 100%;
 }

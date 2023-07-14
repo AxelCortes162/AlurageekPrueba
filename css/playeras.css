@@ -317,7 +317,7 @@ input{
     padding: 1rem;
     transition: .5s;
 }
-@media (min-width: 768px) {
+@media (min-width: 1208px) {
    .producto:hover{
     transform: scale(1.3);
     } 
