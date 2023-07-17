@@ -500,3 +500,80 @@ input{
         gap: 2rem;
     }
 }
+
+/*Loggin*/
+
+.loggin{
+    display: flex;
+    flex-direction: column;
+}
+.loggin__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+.loggin__email{
+    padding: 1rem;
+    box-shadow: 1px 1px 10px var(--primarioOscuro);
+}
+.loggin__contraseña{
+    padding: 1rem;
+    box-shadow: 1px 1px 10px var(--primarioOscuro);
+}
+.loggin__boton{
+    width: 10rem;
+    height: 4rem;
+}
+.main__loggin{
+    padding-top: 0;
+}
+.inputs{
+    padding: 1rem;
+    width: 90%;
+    box-shadow: 1px 1px 10px var(--primarioOscuro);
+}
+.textarea{
+    width: 90%;
+    max-height: 10rem;
+}
+.agregar__boton{
+    width: 90%;
+    height: 5rem;
+}
+@media (min-width: 768px) {
+    .loggin__input{
+        width: 40rem;
+    }
+    .loggin__boton{
+        width: 30rem;
+        height: 5rem;
+    }
+    .inputs{
+        width: 90%;
+    }
+}
+@media (min-width: 1200px) {
+    .loggin__input{
+        width: 100%;
+        max-width: 500px;
+    }
+    .loggin__boton{
+        width: 100%;
+        max-width: 500px;
+        transition: all .4s;
+    }
+    .loggin__boton:hover{
+        transform: scale(1.1);
+    }
+    .inputs{
+        width: 500px;
+    }
+    .textarea{
+        width: 500px;
+    }
+    .agregar__boton{
+        width: 500px;
+    }
+}
