@@ -1,0 +1,57 @@
+/*Loggin*/
+
+.loggin{
+    display: flex;
+    flex-direction: column;
+}
+.loggin__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+.loggin__email{
+    padding: 1rem;
+    box-shadow: 1px 1px 10px var(--primarioOscuro);
+}
+.loggin__contraseña{
+    padding: 1rem;
+    box-shadow: 1px 1px 10px var(--primarioOscuro);
+}
+.loggin__boton{
+    width: 40rem;
+    height: 4rem;
+}
+.main__loggin{
+    padding-top: 0;
+}
+
+
+@media (min-width: 768px) {
+    .loggin__input{
+        width: 40rem;
+    }
+    .loggin__boton{
+        width: 30rem;
+        height: 5rem;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .loggin__input{
+        width: 100%;
+    }
+    .loggin__boton{
+        width: 100%;
+        transition: all .4s;
+    }
+    .loggin__boton:hover{
+        transform: scale(1.1);
+    }
+    .loggin__form{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+}

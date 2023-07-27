@@ -1,0 +1,21 @@
+/*NOSOTROS*/
+@media (min-width: 768px) {
+    .nosotros{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    }
+}
+.nosotros{
+    display: grid;
+    grid-template-rows:  auto;
+}
+
+.nosotros__img{
+    grid-row: 1/2;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .nosotros__img{
+        grid-column: 2/3;
+    }
+}

@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alurageek</title>
     <link rel="stylesheet" href="css/normalice.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header class="header">
         <div class="header__container">
             <a href="index.html">
                 <img class="header__logo" src="img/Logo.svg" alt="Logo">
             </a>
         </div>
-        <div class="buscar">
-            <input class="buscar__texto" type="text" placeholder="Buscar">
-                <a href="" class="boton__1">
-                    <i class="icon-buscar"></i>
-                </a>            
+        <div class="buscar search-container">
+            <input 
+            id="searchInput" 
+            class="buscar__texto" 
+            type="text" 
+            placeholder="Buscar" 
+            data-busqueda>
+            <button class="boton__1" >
+                <i class="icon-buscar"></i>
+            </button>            
         </div>
         <div class="loggin">
             <a href="loggin.html">
@@ -32,25 +40,34 @@
             
         </div>
     </header>
+
     <nav class="nav">
         <a class="nav__enlace nav__enlace--activo" href="index.html">Tienda</a>
         <a class="nav__enlace" href="nosotros.html">Nosotros</a>
     </nav>
+
     <main class="main">
         <section class="playeras">
             <div class="topo">
                 <h2 class="topo__titulo">
                     Playeras
                 </h2>
-
-                <a class="topo__enlace" href="playeras.html"><p>Ver todo <i class="icon-flecha"></i></p></a>
-
+                <a 
+                    class="topo__enlace" 
+                    href="playeras.html">
+                    <p>
+                        Ver todo <i class="icon-flecha"></i>
+                    </p>
+                </a>
             </div>
             <div class="productos">
                 <div class="grid">
                     <div class="producto">
                         <a href="producto.html">
-                            <img class="producto__img" src="img/1.jpg" alt="imagen camisa">
+                            <img 
+                            class="producto__img" 
+                            src="img/1.jpg" 
+                            alt="imagen camisa">
                             <div class="producto__inf">
                                 <p class="producto__nombre">VueJS</p>
                                 <p class="producto__precio">$25</p>
@@ -59,7 +76,10 @@
                     </div> <!--PRODUCTO-->
                     <div class="producto">
                         <a href="producto.html">
-                            <img class="producto__img" src="img/2.jpg" alt="imagen camisa">
+                            <img 
+                            class="producto__img" 
+                            src="img/2.jpg" 
+                            alt="imagen camisa">
                             <div class="producto__inf">
                                 <p class="producto__nombre">AngularJS</p>
                                 <p class="producto__precio">$25</p>
@@ -68,7 +88,10 @@
                     </div> <!--PRODUCTO-->
                     <div class="producto">
                         <a href="producto.html">
-                            <img class="producto__img" src="img/3.jpg" alt="imagen camisa">
+                            <img 
+                            class="producto__img" 
+                            src="img/3.jpg" 
+                            alt="imagen camisa">
                             <div class="producto__inf">
                                 <p class="producto__nombre">ReactJS</p>
                                 <p class="producto__precio">$25</p>
@@ -77,16 +100,22 @@
                     </div> <!--PRODUCTO-->
                     <div class="producto">
                         <a href="producto.html">
-                            <img class="producto__img" src="img/4.jpg" alt="imagen camisa">
+                            <img 
+                            class="producto__img" 
+                            src="img/4.jpg" 
+                            alt="imagen camisa">
                             <div class="producto__inf">
                                 <p class="producto__nombre">ReduxJS</p>
                                 <p class="producto__precio">$25</p>
                             </div>
                         </a>
                     </div> <!--PRODUCTO-->
-                    <div class="producto escritorio"
+                    <div class="producto escritorio">
                         <a href="producto.html">
-                            <img class="producto__img" src="img/5.jpg" alt="imagen camisa">
+                            <img 
+                            class="producto__img" 
+                            src="img/5.jpg" 
+                            alt="imagen camisa">
                             <div class="producto__inf">
                                 <p class="producto__nombre">NodeJS</p>
                                 <p class="producto__precio">$25</p>
@@ -95,7 +124,10 @@
                     </div> <!--PRODUCTO-->
                     <div class="producto escritorio">
                         <a href="producto.html">
-                            <img class="producto__img" src="img/6.jpg" alt="imagen camisa">
+                            <img 
+                            class="producto__img" 
+                            src="img/6.jpg" 
+                            alt="imagen camisa">
                             <div class="producto__inf">
                                 <p class="producto__nombre">SAASJS</p>
                                 <p class="producto__precio">$25</p>
@@ -116,7 +148,10 @@
             <div class="grid">
                 <div class="producto">
                     <a href="producto.html">
-                        <img class="producto__img" src="img/laptops/1_20230711_221413_0000.png" alt="imagen laptop">
+                        <img 
+                        class="producto__img" 
+                        src="img/laptops/1_20230711_221413_0000.png" 
+                        alt="imagen laptop">
                         <div class="producto__inf">
                             <p class="producto__nombre">
                                 ThinkPad X1 Carbon</p>
@@ -126,7 +161,10 @@
                 </div> <!--PRODUCTO-->
                 <div class="producto">
                     <a  href="producto.html">
-                        <img class="producto__img" src="img/laptops/2_20230711_221413_0001.png" alt="imagen laptop">
+                        <img 
+                        class="producto__img" 
+                        src="img/laptops/2_20230711_221413_0001.png" 
+                        alt="imagen laptop">
                         <div class="producto__inf">
                             <p class="producto__nombre">
                                 Slim 7i</p>
@@ -136,7 +174,10 @@
                 </div> <!--PRODUCTO-->
                 <div class="producto">
                     <a href="producto.html">
-                        <img class="producto__img" src="img/laptops/3.jpeg" alt="imagen laptop">
+                        <img 
+                        class="producto__img" 
+                        src="img/laptops/3.jpeg" 
+                        alt="imagen laptop">
                         <div class="producto__inf">
                             <p class="producto__nombre">
                                 ideapad 3i</p>
@@ -146,7 +187,10 @@
                 </div> <!--PRODUCTO-->
                 <div class="producto">
                     <a href="producto.html">
-                        <img class="producto__img" src="img/laptops/4_20230711_222907_0000.png" alt="imagen laptop">
+                        <img 
+                        class="producto__img"
+                        src="img/laptops/4_20230711_222907_0000.png"
+                        alt="imagen laptop">
                         <div class="producto__inf">
                             <p class="producto__nombre">
                                 ThinkPad P16s
@@ -157,7 +201,10 @@
                 </div> <!--PRODUCTO-->
                 <div class="producto escritorio">
                     <a href="producto.html">
-                        <img class="producto__img" src="img/laptops/5_20230711_222908_0001.png" alt="imagen laptop">
+                        <img 
+                        class="producto__img" 
+                        src="img/laptops/5_20230711_222908_0001.png"
+                        alt="imagen laptop">
                         <div class="producto__inf">
                             <p class="producto__nombre">
                                 ThinkPad t14</p>
@@ -167,7 +214,10 @@
                 </div> <!--PRODUCTO-->
                 <div class="producto escritorio">
                     <a href="producto.html">
-                        <img class="producto__img" src="img/laptops/6_20230711_222908_0002.png" alt="imagen laptop">
+                        <img 
+                        class="producto__img" 
+                        src="img/laptops/6_20230711_222908_0002.png" 
+                        alt="imagen laptop">
                         <div class="producto__inf">
                             <p class="producto__nombre">
                                 ThinkPad t14s</p>
@@ -189,7 +239,10 @@
         <div class="grid">
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__img" src="img/nfts/20230712_000705_0000.png" alt="imagen laptop">
+                    <img 
+                    class="producto__img" 
+                    src="img/nfts/20230712_000705_0000.png" 
+                    alt="imagen laptop">
                     <div class="producto__inf">
                         <p class="producto__nombre">
                             hen</p>
@@ -199,7 +252,10 @@
             </div> <!--PRODUCTO-->
             <div class="producto">
                 <a  href="producto.html">
-                    <img class="producto__img" src="img/nfts/20230712_000705_0001.png" alt="imagen laptop">
+                    <img 
+                    class="producto__img" 
+                    src="img/nfts/20230712_000705_0001.png" 
+                    alt="imagen laptop">
                     <div class="producto__inf">
                         <p class="producto__nombre">
                             Dogball</p>
@@ -209,7 +265,10 @@
             </div> <!--PRODUCTO-->
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__img" src="img/nfts/20230712_000705_0002.png" alt="imagen laptop">
+                    <img 
+                    class="producto__img" 
+                    src="img/nfts/20230712_000705_0002.png" 
+                    alt="imagen laptop">
                     <div class="producto__inf">
                         <p class="producto__nombre">
                             blackcat</p>
@@ -219,7 +278,10 @@
             </div> <!--PRODUCTO-->
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__img" src="img/nfts/20230712_000705_0003.png" alt="imagen laptop">
+                    <img 
+                    class="producto__img" 
+                    src="img/nfts/20230712_000705_0003.png" 
+                    alt="imagen laptop">
                     <div class="producto__inf">
                         <p class="producto__nombre">
                             city
@@ -230,34 +292,44 @@
             </div> <!--PRODUCTO-->
             <div class="producto escritorio">
                 <a href="producto.html">
-                    <img class="producto__img" src="img/nfts/20230712_000705_0004.png" alt="imagen laptop">
+                    <img 
+                    class="producto__img" 
+                    src="img/nfts/20230712_000705_0004.png" 
+                    alt="imagen laptop">
                     <div class="producto__inf">
-                        <p class="producto__nombre">
-                            eye</p>
+                        <p class="producto__nombre">eye</p>
                         <p class="producto__precio">$200</p>
                     </div>
                 </a>
             </div> <!--PRODUCTO-->
             <div class="producto escritorio">
                 <a href="producto.html">
-                    <img class="producto__img" src="img/nfts/20230712_000705_0005.png" alt="imagen laptop">
+                    <img 
+                    class="producto__img" 
+                    src="img/nfts/20230712_000705_0005.png" 
+                    alt="imagen laptop">
                     <div class="producto__inf">
                         <p class="producto__nombre">
-                            flower</p>
+                            flower
+                        </p>
                         <p class="producto__precio">$250</p>
                     </div>
                 </a>
             </div> <!--PRODUCTO-->
         </div>
     </section>
+
     </main>
 
     <footer class="footer">
         <div class="contacto">
-            <divc class="contacto__container">
+            <div class="contacto__container">
                 <div class="contacto__logo">
                     <a href="index.html">
-                        <img class="header__logo" src="img/Logo.svg" alt="Logo">
+                        <img 
+                        class="header__logo" 
+                        src="img/Logo.svg" 
+                        alt="Logo">
                     </a>
                 </div>
                 <div class="contacto__links">
@@ -268,23 +340,70 @@
                     <a href="#">Quiero ser franquiciado</a>
                     <a href="agregar.html">Anúncie aquí</a>
                 </div>
-            </divc>
-            
-            <div class="contacto__contacto">
-                <h3>
-                    Hable con nosotros
-                </h3>
-                <div class="contacto__contacto--inputs">
-                    <input type="text" placeholder="Nombre" class="contacto__input">
-                    <textarea class="contacto__textarea" placeholder="Escribe tu mensaje" name="" id="" cols="30" rows="5"></textarea>
-                </div>
-                <button class="contacto__boton" type="submit">
-                    Enviar mensaje
-                </button>
             </div>
+
+            <form class="contacto__contacto--inputs">
+
+                <div class="input-container ">
+                    <input 
+                        name="name" 
+                        id="name" 
+                        class="input" 
+                        type="text" 
+                        placeholder="Nombre" 
+                        required data-tipo="nombre" 
+                        pattern="[\s\S]{7,40}">
+                    <label 
+                        class="input-label" 
+                        for="name">
+                            Nombre
+                    </label>
+                    <span class="input-message-error">
+                        Este campo no es valido
+                    </span>
+                </div>
+
+                <div class="input-container">
+                    <textarea 
+                        name="text" 
+                        id="mensaje" 
+                        class="input input__mensaje" 
+                        type="text" 
+                        cols="30" rows="10"
+                        placeholder="Escribe tu mensaje" 
+                        required 
+                        data-tipo="mensaje" 
+                        minlength="10"
+                        maxlength="120"
+                        ></textarea>
+                    <label 
+                        class="input-label" 
+                        for="mensaje">
+                            Tu mensaje
+                    </label>
+                    <span class="input-message-error">
+                        Este campo no es valido
+                    </span>
+                </div>
+
+                <button  
+                    class="contacto__boton" 
+                    type="submit">
+                        Enviar mensaje
+                </button>
+
+            </form> 
+
         </div>
-        <div class="rodapie">
-            <p class="rodapie__texto">AluraGeek - Todos los derechos Reservados 2023.</p>
-        </div>
-    </footer>
+    </div>
+
+    <div class="rodapie">
+        <p class="rodapie__texto">
+            AluraGeek - Todos los derechos Reservados 2023.
+        </p>
+    </div>
+
+</footer>
+<script type="module" src="js/app.js"></script>
 </body>
+</html>
