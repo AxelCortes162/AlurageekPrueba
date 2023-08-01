@@ -351,11 +351,20 @@ fieldset{
     padding: 1rem;
     transition: .3s;
 }
+.proindex{
+    display: none;
+}
+.proindex:nth-child(-n+4){
+    display: block;
+}
 @media (min-width: 1200px) {
     .producto:hover{
         transform: scale(1.01);
         box-shadow: 1px 2px 15px var(--negro);
         } 
+    .proindex:nth-child(-n+6){
+        display: block;
+    }    
 }
 
 .producto__img{
@@ -390,14 +399,11 @@ fieldset{
 .topo__enlace p:hover{
     scale: 1.2;
 }
-.escritorio{
-    display: none;
-}
+
 @media (min-width: 1200px) {
     .topo__enlace p{
         font-size: 20px;
     }
-    .escritorio{display: block;}
 }
 
 /*GRAIFCOS*/

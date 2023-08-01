@@ -1,23 +1,84 @@
 {
-    "playeras": [
-      {
-        "url":,
-        "nombre": "eyecat ",
-        "precio": "$900",
-        "descripcion": "lorem ksm dk no sqe mas escribir"
-      },
-      {
-        "nombre": "Es",
-        "email": "esmeraldaglez25@gmail.com",
-        "id": "05212095-dfdd-449c-9f3d-3277baf92ca5"
-      }
-    ],
-    "nfts":[
-        {
-            "url":,
-            "nombre": "eyecat ",
-            "precio": "$900",
-            "descripcion": "lorem ksm dk no sqe mas escribir" 
-        }
-    ]
-  }
+  "producto": [
+    {
+      "nombre": "VueJs",
+      "seccion": "playeras",
+      "imagenURL": "img/1.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 1
+    },
+    {
+      "nombre": "AngularJs",
+      "seccion": "playeras",
+      "imagenURL": "img/2.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 2
+    },
+    {
+      "nombre": "ReactJs",
+      "seccion": "playeras",
+      "imagenURL": "img/3.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 3
+    },
+    {
+      "nombre": "ReduxJs",
+      "seccion": "playeras",
+      "imagenURL": "img/4.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 4
+    },
+    {
+      "nombre": "NodeJs",
+      "seccion": "playeras",
+      "imagenURL": "img/5.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 5
+    },
+    {
+      "nombre": "SAASJs",
+      "seccion": "playeras",
+      "imagenURL": "img/6.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 6
+    },
+    {
+      "nombre": "SAASaaas",
+      "seccion": "playeras",
+      "imagenURL": "img/7.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 6
+    },
+    {
+      "nombre": "SAASJs",
+      "seccion": "playeras",
+      "imagenURL": "img/7.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 6
+    },
+    {
+      "nombre": "SAASJs",
+      "seccion": "playeras",
+      "imagenURL": "img/8.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 6
+    },
+    {
+      "nombre": "SAASJs",
+      "seccion": "playeras",
+      "imagenURL": "img/9.jpg",
+      "price": "$25",
+      "descipcion": "Lorem insup bla vla vla y mas vla val val",
+      "id": 6
+    }
+  ]
+}
