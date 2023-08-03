@@ -25,13 +25,107 @@
     <main class="main main__loggin">
         <div class="agregar">
             <h2 class="loggin__titulo">Agregar Producto</h2>
-            <form class="agregar__form" action="">
-                <input required class="agregar inputs" type="url" placeholder="URL de la imagen">
-                <input required type="text" placeholder="Categoria" class="agregar inputs">
-                <input required class="agregar inputs" placeholder="Nombre del producto" type="text">
-                <input required type="text" class="agregar inputs" placeholder="Precio del producto">
-                <textarea required class="textarea" name="" id="" cols="30" rows="10"></textarea>
-                <input class="boton agregar__boton" type="submit" value="Agregar producto">
+            <form class="agregar__form" data-addForm>
+
+                <div class="input-container ">
+                    <input 
+                        name="url" 
+                        id="url" 
+                        class="agregar input inputs" 
+                        type="url" 
+                        placeholder="URL de la imagen" 
+                        required data-tipo="url"
+                        data-url>
+                    <label 
+                        class="input-label" 
+                        for="url">
+                            URL de la imagen
+                    </label>
+                    <span class="input-message-error">
+                        Este campo no es valido
+                    </span>
+                </div>
+
+                <div class="input-container ">
+                    <select class="agregar input inputs" name="categoria" id="categoria" data-categoria data-tipo="categoria" required>
+                        <option disabled selected value="">Seleccionar Categoria</option>
+                        <option value="playeras">Playeras</option>
+                        <option value="laptops">Laptops</option>
+                        <option value="nfts">NFTs</option>
+                    </select>
+                    <label 
+                        class="input-label" 
+                        for="categoria">
+                            Seleccione categoria
+                    </label>
+                    <span class="input-message-error">
+                        Este campo no es valido
+                    </span>
+                </div>
+
+                <div class="input-container ">
+                    <input 
+                        name="name" 
+                        id="name" 
+                        class="agregar input inputs" 
+                        type="text" 
+                        placeholder="Nombre del producto" 
+                        required data-tipo="name"
+                        data-nombre>
+                    <label 
+                        class="input-label" 
+                        for="name">
+                            Nombre del producto
+                    </label>
+                    <span class="input-message-error">
+                        Este campo no es valido
+                    </span>
+                </div>
+
+                <div class="input-container ">
+                    <input 
+                        name="precio" 
+                        id="precio" 
+                        class="agregar input inputs" 
+                        type="number" 
+                        placeholder="Precio del producto" 
+                        required data-tipo="precio"
+                        data-precio>
+                    <label 
+                        class="input-label" 
+                        for="precio">
+                            Precio del producto
+                    </label>
+                    <span class="input-message-error">
+                        Este campo no es valido
+                    </span>
+                </div>
+
+                <div class="input-container ">
+                    <textarea 
+                        name="descripcion" 
+                        id="descripcion" 
+                        class="agregar input inputs input__mensaje" 
+                        type="text" 
+                        cols="30" rows="10"
+                        minlength="10"
+                        placeholder="Descripcion del producto" 
+                        required data-tipo="descripcion"
+                        data-descripcion></textarea>
+                    <label 
+                        class="input-label" 
+                        for="precio">
+                            Describe tu producto
+                    </label>
+                    <span class="input-message-error">
+                        Este campo no es valido
+                    </span>
+                </div>
+                
+                <a href="index.html">
+                    <input class="boton agregar__boton" type="submit" value="Agregar producto">
+                </a>
+                
             </form>
         </div>
 
@@ -101,11 +195,11 @@
                     </span>
                 </div>
 
-                <button  
+                <input  
                     class="contacto__boton" 
                     type="submit">
                         Enviar mensaje
-                </button>
+                </input>
 
             </form> 
 
@@ -121,6 +215,7 @@
 </footer>
 <script type="module" src="js/app.js">
 </script>
+<script type="module" src="controllers/crearProductoController.js"></script>
 </body>
 </html>
         

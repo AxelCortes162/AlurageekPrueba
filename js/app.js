@@ -9,11 +9,5 @@ inputs.forEach((input) => {
     }); 
 })
 
-const formulario = document.querySelector("[data-form]");
-formulario.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    window.location.href = "loggin_completo.html"
-    console.log( "YA SE Hizp CLICK")
-})
  
 // app.js
