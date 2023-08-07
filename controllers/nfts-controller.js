@@ -1,11 +1,11 @@
 import { productoServicios } from "../servicios/productos-servicios.js";
 
-const crearNuevoProducto = (nombre, imagenURL, price, id) => {
+const crearNuevoProducto = (nombre, imagenURL, price, descripcion, id) => {
     const card = document.createElement("div");
     card.classList.add("producto");
 
     const contenidoNfts = `
-    <a href="producto.html?id=${id}">
+    <a href="producto-nfts.html?id=${id}">
         <img 
         class="producto__img" 
         src="${imagenURL}" 
@@ -27,7 +27,7 @@ const divNfts = document.querySelector("[data-productN]");
 
 productoServicios.listaProductosN().then((data)=>{
     data.forEach((nfts) => {
-        const nuevoProducto = crearNuevoProducto(nfts.nombre, nfts.imagenURL, nfts.price)
+        const nuevoProducto = crearNuevoProducto(nfts.nombre, nfts.imagenURL, nfts.price, nfts.descripcion, nfts.id)
         divNfts.appendChild(nuevoProducto);
     });
 })

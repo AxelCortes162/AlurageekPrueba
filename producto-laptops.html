@@ -24,23 +24,21 @@
     </nav>
 
     <main class="contenedor">
-        <h1>
-            React js
+        <h1 data-producto>
+            reactr
         </h1>
 
         <div class="camisa">
-            <img src="img/3.jpg" alt="imagen del producto" class="camisa__img">
+            <img data-imagen src="img/3.jpg" alt="imagen del producto" class="camisa__img">
             <div class="camisa__contenido">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iure dolor nulla rem ad, consectetur ipsa asperiores perspiciatis rerum veritatis labore inventore dolorum aliquid quia laborum in praesentium, necessitatibus voluptas.</p>
-                <form action="" class="formulario">
-                    <select class="formulario__campo" name="" id="">
-                        <option disabled selected value="">Seleccionar Talla</option>
-                        <option value="">Chica</option>
-                        <option value="">Mediana</option>
-                        <option value="">Grande</option>
-                    </select>
-                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
-                    <input class="formulario__submit" type="submit" value="Agregar al carrrito">
+                <p data-descripcion>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iure dolor nulla rem ad, consectetur ipsa asperiores perspiciatis rerum veritatis labore inventore dolorum aliquid quia laborum in praesentium, necessitatibus voluptas.</p>
+                <form action="" class="formulario--lap">
+                    <input class="formulario__campo--lap" type="number" placeholder="Cantidad" min="1">
+                    <div class="submit--laps">
+                        <input data-carrito class="formulario__submit--lap" type="submit" value="Agregar al carrrito">
+                        <input data-carrito class="formulario__submit--lap" type="submit" value="Comprar">
+                    </div>
+                    
                 </form>
             </div>
         </div>
@@ -130,5 +128,6 @@
 
 </footer>
 <script type="module" src="js/app.js"></script>
+<script type="module" src="controllers/productoLaptos-controller.js"></script>
 </body>
 </html>

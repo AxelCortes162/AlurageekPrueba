@@ -2,13 +2,13 @@ import { productoServicios } from "../servicios/productos-servicios.js";
 
 console.log(productoServicios)
 
-const crearNuevoProducto = (nombre, imagenURL, price, id) => {
+const crearNuevoProducto = (nombre, imagenURL, price, descripcion, id) => {
     const card = document.createElement("div");
     card.classList.add("producto");
 
     const contenidoPlayeras = `
     
-        <a href="producto.html?id=${id}">
+        <a href="producto-playeras.html?id=${id}">
         <img 
             class="producto__img" 
             src="${imagenURL}" 
@@ -30,7 +30,7 @@ const divPlayeras = document.querySelector("[data-product]");
 
 productoServicios.listaProductosP().then((data)=>{
     data.forEach((playeras) => {
-        const nuevoProducto = crearNuevoProducto(playeras.nombre, playeras.imagenURL, playeras.price)
+        const nuevoProducto = crearNuevoProducto(playeras.nombre, playeras.imagenURL, playeras.price, playeras.descripcion, playeras.id)
         divPlayeras.appendChild(nuevoProducto);
     });
 })

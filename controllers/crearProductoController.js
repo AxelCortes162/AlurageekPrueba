@@ -22,7 +22,7 @@ form.addEventListener("submit", (evento) =>{
         });
     } else{
         if (categoria.value == "laptops"){
-            window.location.href = "laptops.html";
+            window.location.href = "laptos.html";
             productoServicios.crearProductoL(url, nombre, precio, descripcion)
             .then(respuesta => {
                 console.log(respuesta)

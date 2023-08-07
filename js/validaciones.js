@@ -8,12 +8,6 @@ export function valida(input) {
         input.parentElement.classList.add("input-container--invalid");
         input.parentElement.querySelector(".input-message-error").innerHTML = mostarMesajeError(tipoDeInput, input)
     };
-
-    const formulario = document.querySelector("[data-form]");
-    formulario.addEventListener("submit", (e) => {
-        e.preventDefault();
-        window.location.href = "loggin_completo.html"
-    });
 }
 
 const mensajesError = {

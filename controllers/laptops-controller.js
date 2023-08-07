@@ -1,12 +1,12 @@
 import { productoServicios } from "../servicios/productos-servicios.js";
 
-const crearNuevoProducto = (nombre, imagenURL, price, id) => {
+const crearNuevoProducto = (nombre, imagenURL, price, descripcion, id) => {
     const card = document.createElement("div");
     card.classList.add("producto");
 
     const contenidoLaptops = `
     
-    <a href="producto.html?id=${id}">
+    <a href="producto-laptops.html?id=${id}">
         <img 
         class="producto__img" 
         src="${imagenURL}" 
@@ -28,7 +28,7 @@ const divLaptops = document.querySelector("[data-product]");
 
 productoServicios.listaProductosL().then((data)=>{
     data.forEach((laptops) => {
-        const nuevoProducto = crearNuevoProducto(laptops.nombre, laptops.imagenURL, laptops.price)
+        const nuevoProducto = crearNuevoProducto(laptops.nombre, laptops.imagenURL, laptops.price, laptops.descripcion, laptops.id)
         divLaptops.appendChild(nuevoProducto);
     });
 })
